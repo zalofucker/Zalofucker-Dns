@@ -1,4 +1,5 @@
-# DNS IPv6/TLS/HTTPS giúp bạn chặn zalo dễ dàng hơn
+# DNS IPv4/6/TLS/HTTPS giúp bạn chặn zalo dễ dàng hơn
+> ⚠️ DNS ĐƯỢC ÁP DỤNG TẤT BỘ LỌC MẶC ĐỊNH THEO ORG, KHÔNG BAO GỒM CHẶN QC
 ## ☁️ Cloudflare
 |TLS | HTTPS| IPv6 | IPv4 |
 |---- | -----| -----| -----|
