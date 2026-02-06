@@ -8,6 +8,6 @@
 ## 🛥️ NextDNS
 |TLS | HTTPS| IPv6 | IPv4 |
 |---- | -----| -----| -----|
-| 638162.dns.nextdns.io 638162.dns1.nextdns.io 638162.dns2.nextdns.io | https://dns.nextdns.io/638162 https://ultralow.dns.nextdns.io/638162  https://ultralow.dns2.nextdns.io/638162  https://anycast.dns.nextdns.io/638162  https://doh3.dns.nextdns.io/638162  https://doh3.dns1.nextdns.io/638162. https://doh3.dns2.nextdns.io/638162| 2a07:a8c0::63:8162 2a07:a8c1::63:8162 | 172.64.36.1 172.64.36.2 |
+| 638162.dns.nextdns.io <br> 638162.dns1.nextdns.io <br> 638162.dns2.nextdns.io | https://dns.nextdns.io/638162 <br>  https://ultralow.dns.nextdns.io/638162 <br>   https://ultralow.dns2.nextdns.io/638162  <br>  https://anycast.dns.nextdns.io/638162  <br>  https://doh3.dns.nextdns.io/638162  <br>  https://doh3.dns1.nextdns.io/638162  <br>  https://doh3.dns2.nextdns.io/638162| 2a07:a8c0::63:8162 2a07:a8c1::63:8162 | 172.64.36.1 172.64.36.2 |
 
 ##  🧠 Sự khác biệt giữa NextDNS và Cloudflare
