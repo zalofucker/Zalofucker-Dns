@@ -230,7 +230,7 @@ Bước 1: Chạy lệnh sau
 Bạn hãy đọc qua bài [này nhé](https://tailscale.com/kb/1218/nextdns)
 
 ## 🙏 Cảm ơn:
-  + mrfvv: Người xây dựng công cụ tạo DNS cho CloudFlare
+  + mrrfv: Người xây dựng công cụ tạo DNS cho CloudFlare
   + NextDNS : Nhà cung cấp DNS
   + [HzzMoment](https://github.com/hzzmonetvn) : Thg làm QR
   + VOZ : Giúp tôi xây dựng server anycast  
