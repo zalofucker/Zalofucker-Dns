@@ -1,5 +1,5 @@
-# DNS IPv4/6/TLS/HTTPS giúp bạn chặn đồ của zalo dễ dàng hơn
-> ⚠️ DNS ĐƯỢC ÁP DỤNG TẤT BỘ LỌC MẶC ĐỊNH THEO ORG, KHÔNG BAO GỒM CHẶN QC
+# IPv4/6/TLS/HTTPS giúp bạn chặn đồ của zalo dễ dàng hơn
+> ⚠️ DNS ĐƯỢC ÁP DỤNG TẤT BỘ LỌC MẶC ĐỊNH THEO ORG, KHÔNG BAO GỒM **CHẶN QC**
 ## ☁️ Cloudflare
 |TLS | HTTPS| IPv6 | IPv4 |
 |---- | -----| -----| -----|
@@ -13,6 +13,7 @@
 ### ℹThông tin thêm
   + dns/dns1/dns2 là lựa chọn server ở ultralow (là server VN)
   + anycast là server ở Singapore có dung lượng cache cao hơn nhưng có thể ping cao hơn
+> ⚠ LƯU Ý: NẾU DNS1/2 HOẶC ANYCAST BỊ SẬP THÌ SẼ SẬP HẲN LUÔN, KHUYẾN KHÍCH DÙNG MẶC ĐỊNH ĐỂ GIỮ MỘT MẠNG ỔN ĐỊNH
 
 > DDNS của NextDNS cho ai muốn nhét vào router : `https://link-ip.nextdns.io/638162/15145197addbe44b`
 
@@ -27,3 +28,62 @@
 | **Riêng tư & log** | 1.1.1.1 được xàm l là resolver “nhanh nhất và ưu tiên quyền riêng tư”; Cloudflare nhấn mạnh không bán dữ liệu người dùng (mà nó ăn luôn), log được giữ thời gian ngắn, có kiểm toán độc lập (KPMG) để đảm bảo cam kết quyền riêng tư (bản) | Log chi tiết theo profile: domain truy vấn, thiết bị, hành vi bị chặn/cho phép; người dùng có thể **tắt log hoàn toàn, chọn thời gian lưu trữ, chọn khu vực lưu trữ** (tắt r yên tâm đi). Log có thể tải về để phân tích/copy lưu trữ. Mức kiểm soát log và vị trí dữ liệu thường cao hơn Cloudflare trong các so sánh độc lập |
 | **Tốc độ & độ trễ (mức toàn cầu)** | 1.1.1.1 thường được DNSPerf đo là **resolver nhanh nhất toàn cầu**, Cloudflare công bố trung bình khoảng **14 ms** toàn cầu khi so với các resolver công cộng khác. Ngoài ra, vì Cloudflare cũng là authoritative DNS lớn và có cung cấp CDN nhúng vào trang web, nhiều truy vấn tới domain host tại Cloudflare được trả lời nội bộ nên càng nhanh | Hiệu năng phụ thuộc mạnh vào: vị trí của POP NextDNS gần bạn, tuyến mạng ISP, và việc bạn dùng anycast hay ultralow. |
 | **Độ ổn định & độ trễ trong thực tế** | Mạng Cloudflare được thiết kế cho SLA doanh nghiệp, có rất nhiều POP và dung lượng chống DDoS lớn, nên độ ổn định và latency thường rất tốt, ít biến động ở hầu hết khu vực | Diễn đàn NextDNS có ghi nhận một số giai đoạn latency tăng hoặc DNS trục trặc (đặc biệt khi dùng anycast thay vì ultralow). Người dùng nâng cao có thể tinh chỉnh chọn DNS ultralow gần nhất để tối ưu độ trễ |
+
+## 🔏 Cách cài
+### 1. 🐪 Android
+#### Với Android 9 trở lên 
+Tùy hãng máy (Pixel, Samsung, Xiaomi…) tên menu có thể khác, nhưng cách chung:
+
+  + Mở Cài đặt (Settings).
+
+  + Vào Mạng & internet (Network & internet) hoặc Kết nối (Connections).
+
+  + Tìm mục DNS riêng tư (Private DNS) hoặc bạn tìm luôn cho nhanh
+
+  + Bấm vào rồi lựa server TLS [Cloudflare](https://github.com/zalofucker/Zalofucker-Dns?tab=readme-ov-file#%EF%B8%8F-cloudflare) hoặc [NextDNS](https://github.com/zalofucker/Zalofucker-Dns?tab=readme-ov-file#%EF%B8%8F-nextdns) rồi dán vào
+
+> ⚠ LƯU Ý: ĐỂ Ý XEM CÓ ĐOẠN `HTTPS://` NẾU CÓ THÌ XÓA ĐI
+#### Với Android 9 trở xuống
+
+Dùng [AdGuard](https://github.com/AdguardTeam/AdguardForAndroid/releases) rồi thêm bộ lọc vào 
+| Zalo | ZaloPay | Labankey | Zingmp3|
+|------|---------|----------|--------|
+|[Đây](https://github.com/zalofucker/fuck-you-zalo?tab=readme-ov-file#1-adguard-home--adguard-app) | [Đây](https://github.com/zalofucker/fuck-you-zalopay?tab=readme-ov-file#1-adguard-home--adguard-app) | [Đây](https://github.com/zalofucker/fuck-you-labankey?tab=readme-ov-file#1-adguard-home--adguard-app) | [Đây](https://github.com/zalofucker/fuck-you-zingmp3?tab=readme-ov-file#1-adguard-home--adguard-app) |
+
+### 2. 🍏 Apple (IOS/IpadOS/MacOS/VisionOS/TvOS/...)
+Sử dụng Config đã được làm sẵn và thêm dưới dạng Profile vào
+#### 🌧 Cloudflare
+|TLS | HTTPS |
+|:----:|:-------:|
+|![QR-cl-tls](https://raw.githubusercontent.com/zalofucker/Zalofucker-Dns/refs/heads/main/picture/cl-zalofucker-tls.png) | ![QR-cl-https](https://raw.githubusercontent.com/zalofucker/Zalofucker-Dns/refs/heads/main/picture/cl-zalofucker-https.png) |
+| [Đây](https://raw.githubusercontent.com/zalofucker/Zalofucker-Dns/refs/heads/main/config/cl-zalofucker-tls.mobileconfig) | [Đây](https://raw.githubusercontent.com/zalofucker/Zalofucker-Dns/refs/heads/main/config/cl-zalofucker-https.mobileconfig) |
+
+### 3. 🌍 Trình duyệt 
+#### 🦊 Firefox based (Zen/Mullvad/Florip/Tor/Flop/....)
+  + Mở Firefox.
+
+  + Bấm ☰ (ba que) → Settings (Cài đặt).
+
+  + Trong General (Chung), kéo xuống Network Settings (Thiết lập mạng).
+
+  + Bấm Settings….
+    
+  + Tích Enable DNS over HTTPS (Bật DNS qua HTTPS).
+
+  +Chọn Use Provider và chọn Custom rồi lựa server HTTPS [Cloudflare](https://github.com/zalofucker/Zalofucker-Dns?tab=readme-ov-file#%EF%B8%8F-cloudflare) hoặc [NextDNS](https://github.com/zalofucker/Zalofucker-Dns?tab=readme-ov-file#%EF%B8%8F-nextdns) rồi dán vào
+
+#### ⛪ Chromium based (ungoogled-chromium/Brave/Cromite/Thorium/...)
+
+  + Mở Chrome.
+
+  + Bấm ⋮ (ba chấm) → Settings (Cài đặt).
+
+  + Vào Privacy and security (Quyền riêng tư và bảo mật).
+
+  + Chọn Security (Bảo mật).
+  
+  + Kéo xuống Use secure DNS (Sử dụng DNS bảo mật).
+
+  + Bật Use secure DNS.
+
+  Chọn Custom rồi lựa server HTTPS [Cloudflare](https://github.com/zalofucker/Zalofucker-Dns?tab=readme-ov-file#%EF%B8%8F-cloudflare) hoặc [NextDNS](https://github.com/zalofucker/Zalofucker-Dns?tab=readme-ov-file#%EF%B8%8F-nextdns) rồi dán vào
