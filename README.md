@@ -8,7 +8,7 @@
 ## 🛥️ NextDNS
 |TLS | HTTPS| IPv6 | IPv4 |
 |---- | -----| -----| -----|
-| 638162.dns.nextdns.io <br> 638162.dns1.nextdns.io <br> 638162.dns2.nextdns.io | https://dns.nextdns.io/638162 <br>  https://ultralow.dns.nextdns.io/638162 <br>   https://ultralow2.dns.nextdns.io/638162  <br>  https://anycast.dns.nextdns.io/638162  <br>  https://doh3.dns.nextdns.io/638162  <br>  https://doh3.dns1.nextdns.io/638162  <br>  https://doh3.dns2.nextdns.io/638162| 2a07:a8c0::63:8162 2a07:a8c1::63:8162 | nope |
+| 638162.dns.nextdns.io <br> 638162.dns1.nextdns.io <br> 638162.dns2.nextdns.io | https://dns.nextdns.io/638162 <br>  https://ultralow.dns.nextdns.io/638162 <br>   https://ultralow2.dns.nextdns.io/638162  <br>  https://anycast.dns.nextdns.io/638162  <br>  https://doh3.dns.nextdns.io/638162  <br>  https://doh3.dns1.nextdns.io/638162  <br>  https://doh3.dns2.nextdns.io/638162| 2a07:a8c0::63:8162 <br> 2a07:a8c1::63:8162 <br> 2a07:a8c0:0000:0000:0000:0000:0063:8162 <br> 2a07:a8c1:0000:0000:0000:0000:0063:8162 | nope |
 
 ### ℹThông tin thêm
   + dns/dns1/dns2 là lựa chọn server ở ultralow (là server VN)
@@ -55,8 +55,16 @@ Sử dụng Config đã được làm sẵn và thêm dưới dạng Profile và
 #### 🌧 Cloudflare
 |TLS | HTTPS |
 |:----:|:-------:|
-|![QR-cl-tls](https://raw.githubusercontent.com/zalofucker/Zalofucker-Dns/refs/heads/main/picture/cl-zalofucker-tls.png) | ![QR-cl-https](https://raw.githubusercontent.com/zalofucker/Zalofucker-Dns/refs/heads/main/picture/cl-zalofucker-https.png) |
+|![QR-cl-tls](https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=<https://raw.githubusercontent.com/zalofucker/Zalofucker-Dns/refs/heads/main/config/cl-zalofucker-tls.mobileconfig>) | ![QR-cl-https](https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=<https://raw.githubusercontent.com/zalofucker/Zalofucker-Dns/refs/heads/main/config/cl-zalofucker-https.mobileconfig>) |
 | [Đây](https://raw.githubusercontent.com/zalofucker/Zalofucker-Dns/refs/heads/main/config/cl-zalofucker-tls.mobileconfig) | [Đây](https://raw.githubusercontent.com/zalofucker/Zalofucker-Dns/refs/heads/main/config/cl-zalofucker-https.mobileconfig) |
+
+#### 👔 NextDNS
+|  | **Mặc định** | **Ultralow1** | **Ultralow2** | **Anycast** |
+|:---:|:---:|:---:|:---:|:---:|
+| **TLS** | ![Ảnh](https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=<https://raw.githubusercontent.com/zalofucker/Zalofucker-Dns/refs/heads/main/config/nd-zalofucker-tls.mobileconfig>) | ![Ảnh](https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=<https://raw.githubusercontent.com/zalofucker/Zalofucker-Dns/refs/heads/main/config/nd-zalofucker-ultralow1-tls.mobileconfig>) | ![Ảnh](https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=<https://raw.githubusercontent.com/zalofucker/Zalofucker-Dns/refs/heads/main/config/nd-zalofucker-ultralow2-tls.mobileconfig>) | |
+|  | [Đây](https://raw.githubusercontent.com/zalofucker/Zalofucker-Dns/refs/heads/main/config/nd-zalofucker-tls.mobileconfig) | [Đây](https://raw.githubusercontent.com/zalofucker/Zalofucker-Dns/refs/heads/main/config/nd-zalofucker-ultralow1-tls.mobileconfig) | [Đây](https://raw.githubusercontent.com/zalofucker/Zalofucker-Dns/refs/heads/main/config/nd-zalofucker-ultralow2-tls.mobileconfi) | |
+| **HTTPS** | ![Ảnh](https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=<https://raw.githubusercontent.com/zalofucker/Zalofucker-Dns/refs/heads/main/config/nd-zalofucker-https.mobileconfig>) | ![Ảnh](https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=<https://raw.githubusercontent.com/zalofucker/Zalofucker-Dns/refs/heads/main/config/nd-zalofucker-ultralow1-https.mobileconfig>) | ![Ảnh](https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=<https://raw.githubusercontent.com/zalofucker/Zalofucker-Dns/refs/heads/main/config/nd-zalofucker-ultralow2-https.mobileconfig>) | ![Ảnh](https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=<https://raw.githubusercontent.com/zalofucker/Zalofucker-Dns/refs/heads/main/config/nd-zalofucker-anycast-https.mobileconfig>) |
+|  | [Đây](https://raw.githubusercontent.com/zalofucker/Zalofucker-Dns/refs/heads/main/config/nd-zalofucker-https.mobileconfig) | [Đây](https://raw.githubusercontent.com/zalofucker/Zalofucker-Dns/refs/heads/main/config/nd-zalofucker-ultralow1-https.mobileconfig) | [Đây](https://raw.githubusercontent.com/zalofucker/Zalofucker-Dns/refs/heads/main/config/nd-zalofucker-ultralow2-https.mobileconfig) | [Đây](https://raw.githubusercontent.com/zalofucker/Zalofucker-Dns/refs/heads/main/config/nd-zalofucker-anycast-https.mobileconfig) |
 
 ### 3. 🌍 Trình duyệt 
 #### 🦊 Firefox based (Zen/Mullvad/Florip/Tor/Flop/....)
@@ -87,3 +95,142 @@ Sử dụng Config đã được làm sẵn và thêm dưới dạng Profile và
   + Bật Use secure DNS.
 
   Chọn Custom rồi lựa server HTTPS [Cloudflare](https://github.com/zalofucker/Zalofucker-Dns?tab=readme-ov-file#%EF%B8%8F-cloudflare) hoặc [NextDNS](https://github.com/zalofucker/Zalofucker-Dns?tab=readme-ov-file#%EF%B8%8F-nextdns) rồi dán vào
+
+### 4. 📶 Router/Modern/AP
+#### dnsmasq
+
+Bước 1: Tạo tệp tin hoặc chỉnh sửa tập tin `dnsmasq.conf`
+
+```
+no-resolv
+bogus-priv
+strict-order
+server=
+server=
+server=
+server=
+add-cpe-id=
+```
+
+  Với `server=` thì lựa server IPv4/6 [Cloudflare](https://github.com/zalofucker/Zalofucker-Dns?tab=readme-ov-file#%EF%B8%8F-cloudflare) hoặc [NextDNS](https://github.com/zalofucker/Zalofucker-Dns?tab=readme-ov-file#%EF%B8%8F-nextdns)
+  > ⚠ LƯU Ý: `add-cpe-id=` CHỈ DÙNG KHI BẠN SỬ DỤNG NEXTDNS, CÒN LẠI THÌ BỎ
+
+#### Stubby 
+
+> ⚠ LƯU Ý: CHỈ HỖ TRỢ NEXTDNS
+
+Bước 1: Tạo tệp tin hoặc chỉnh sửa tập tin `stubby.xml`
+
+```
+round_robin_upstreams: 1
+upstream_recursive_servers:
+  - address_data: 45.90.28.0
+    tls_auth_name: "638162.dns.nextdns.io"
+  - address_data: 2a07:a8c0::0
+    tls_auth_name: "638162.dns.nextdns.io"
+  - address_data: 45.90.30.0
+    tls_auth_name: "638162.dns.nextdns.io"
+  - address_data: 2a07:a8c1::0
+    tls_auth_name: "638162.dns.nextdns.io"
+```
+> ⚠ LƯU Ý: CHỈ HỖ TRỢ STUBBY ĐÃ KẾT NỐI VỚI OPENSSL PHIÊN BẢN >= 1.1.1
+
+#### DNSCrypt
+
+> ⚠ LƯU Ý: CHỈ HỖ TRỢ NEXTDNS
+
+Bước 1: Tạo tệp tin hoặc chỉnh sửa tập tin `dnscrypt-proxy.toml`
+
+```
+server_names = ['NextDNS-638162']
+
+[static]
+  [static.'NextDNS-638162']
+  stamp = 'sdns://AgEAAAAAAAAAAAAOZG5zLm5leHRkbnMuaW8HLzYzODE2Mg'
+```
+
+#### pfSense
+
+> ⚠ LƯU Ý: CHỈ HỖ TRỢ NEXTDNS
+
+Bước 1: Đến tới Dịch vụ (Services) -> Nhà xử lý DNS ( DNS Resolver) -> Chung (General) -> Tùy chọn khác (Custom Options)
+
+Bước 2: Điền dòng sau
+```
+server:
+  forward-zone:
+    name: "."
+    forward-tls-upstream: yes
+    forward-addr: 45.90.28.0#638162.dns.nextdns.io
+    forward-addr: 2a07:a8c0::#638162.dns.nextdns.io
+    forward-addr: 45.90.30.0#638162.dns.nextdns.io
+    forward-addr: 2a07:a8c1::#638162.dns.nextdns.io
+```
+
+#### Knot Resolover
+
+> ⚠ LƯU Ý: CHỈ HỖ TRỢ NEXTDNS
+
+Bước 1: Tạo tệp tin hoặc chỉnh sửa tệp tin tại `/etc/kresd/custom.conf` 
+
+eg: `nano /etc/kresd/custom.conf`
+
+Bước 2: Điền dòng sau 
+
+```
+policy.add(policy.all(policy.TLS_FORWARD({
+  {'45.90.28.0', hostname='638162.dns.nextdns.io'},
+  {'2a07:a8c0::', hostname='638162.dns.nextdns.io'},
+  {'45.90.30.0', hostname='638162.dns.nextdns.io'},
+  {'2a07:a8c1::', hostname='638162.dns.nextdns.io'}
+})))
+```
+
+#### Unbound
+
+> 😡 CỰC LƯU Ý: DO UNBOUND VÀ CNAMES ĐANG ĐẤM NHAU VẬY NÊN LÀ CÓ THỂ CÓ LỖI, XEM TẠI [ĐÂY]( github.com/NLnetLabs/unbound/issues/132)
+>> ⚠ LƯU Ý: CHỈ HỖ TRỢ NEXTDNS
+
+Bước 1: Tạo tệp tin hoặc chỉnh sửa tệp tin `unbound.conf`
+
+Bước 2: Thêm dòng sau vào
+
+```
+forward-zone:
+  name: "."
+  forward-tls-upstream: yes
+  forward-addr: 45.90.28.0#638162.dns.nextdns.io
+  forward-addr: 2a07:a8c0::#638162.dns.nextdns.io
+  forward-addr: 45.90.30.0#638162.dns.nextdns.io
+  forward-addr: 2a07:a8c1::#638162.dns.nextdns.io
+```
+
+#### MikroTik
+
+> ⚠ LƯU Ý: CHỈ HỖ TRỢ NEXTDNS
+
+Bước 1: Chạy lệnh sau
+
+```
+/tool fetch url=https://curl.se/ca/cacert.pem
+/certificate import file-name=cacert.pem
+/ip dns set servers=""
+/ip dns static add name=dns.nextdns.io address=45.90.28.0 type=A
+/ip dns static add name=dns.nextdns.io address=45.90.30.0 type=A
+/ip dns static add name=dns.nextdns.io address=2a07:a8c0:: type=AAAA
+/ip dns static add name=dns.nextdns.io address=2a07:a8c1:: type=AAAA
+/ip dns set use-doh-server=“https://dns.nextdns.io/638162” verify-doh-cert=yes
+```
+
+#### tailscale
+
+> ⚠ LƯU Ý: CHỈ HỖ TRỢ NEXTDNS
+
+
+Bạn hãy đọc qua bài [này nhé](https://tailscale.com/kb/1218/nextdns)
+
+## 🙏 Cảm ơn:
+  + mrfvv: Người xây dựng công cụ tạo DNS cho CloudFlare
+  + NextDNS : Nhà cung cấp DNS
+  + [HzzMoment](https://github.com/hzzmonetvn) : Thg làm QR
+  + VOZ : Giúp tôi xây dựng server anycast  
