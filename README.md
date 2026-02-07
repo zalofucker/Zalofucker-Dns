@@ -10,9 +10,9 @@
 |---- | -----| -----| -----|
 | 638162.dns.nextdns.io <br> 638162.dns1.nextdns.io <br> 638162.dns2.nextdns.io | https://dns.nextdns.io/638162 <br>  https://ultralow.dns.nextdns.io/638162 <br>   https://ultralow2.dns.nextdns.io/638162  <br>  https://anycast.dns.nextdns.io/638162  <br>  https://doh3.dns.nextdns.io/638162  <br>  https://doh3.dns1.nextdns.io/638162  <br>  https://doh3.dns2.nextdns.io/638162| 2a07:a8c0::63:8162 <br> 2a07:a8c1::63:8162 <br> 2a07:a8c0:0000:0000:0000:0000:0063:8162 <br> 2a07:a8c1:0000:0000:0000:0000:0063:8162 | nope |
 
-### ℹThông tin thêm
+### 🏁 Thông tin thêm
   + dns/dns1/dns2 là lựa chọn server ở ultralow (là server VN)
-  + anycast là server ở Singapore có dung lượng cache cao hơn nhưng có thể ping cao hơn
+  + anycast là server ở Singapore có dung lượng cache cao hơn nhưng có thể ping cao hơn (vị trí địa lý ahhh)
 > ⚠ LƯU Ý: NẾU DNS1/2 HOẶC ANYCAST BỊ SẬP THÌ SẼ SẬP HẲN LUÔN, KHUYẾN KHÍCH DÙNG MẶC ĐỊNH ĐỂ GIỮ MỘT MẠNG ỔN ĐỊNH
 
 > DDNS của NextDNS cho ai muốn nhét vào router : `https://link-ip.nextdns.io/638162/15145197addbe44b`
@@ -234,3 +234,4 @@ Bạn hãy đọc qua bài [này nhé](https://tailscale.com/kb/1218/nextdns)
   + NextDNS : Nhà cung cấp DNS
   + [HzzMoment](https://github.com/hzzmonetvn) : Thg làm QR
   + VOZ : Giúp tôi xây dựng server anycast  
+  + [notjakob](https://dns.notjakob.com/tool.html) : Trình tạo profile cho apple
