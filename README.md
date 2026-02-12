@@ -46,9 +46,9 @@ Tùy hãng máy (Pixel, Samsung, Xiaomi…) tên menu có thể khác, nhưng c�
 #### Với Android 9 trở xuống
 
 Dùng [AdGuard](https://github.com/AdguardTeam/AdguardForAndroid/releases) rồi thêm bộ lọc vào 
-| Zalo | ZaloPay | Labankey | Zingmp3|
-|------|---------|----------|--------|
-|[Đây](https://github.com/zalofucker/fuck-you-zalo?tab=readme-ov-file#1-adguard-home--adguard-app) | [Đây](https://github.com/zalofucker/fuck-you-zalopay?tab=readme-ov-file#1-adguard-home--adguard-app) | [Đây](https://github.com/zalofucker/fuck-you-labankey?tab=readme-ov-file#1-adguard-home--adguard-app) | [Đây](https://github.com/zalofucker/fuck-you-zingmp3?tab=readme-ov-file#1-adguard-home--adguard-app) |
+| Zalo | ZaloPay | Labankey | Zingmp3| Kiki |
+|------|---------|----------|--------|-------|
+|[Đây](https://github.com/zalofucker/fuck-you-zalo?tab=readme-ov-file#1-adguard-home--adguard-app) | [Đây](https://github.com/zalofucker/fuck-you-zalopay?tab=readme-ov-file#1-adguard-home--adguard-app) | [Đây](https://github.com/zalofucker/fuck-you-labankey?tab=readme-ov-file#1-adguard-home--adguard-app) | [Đây](https://github.com/zalofucker/fuck-you-zingmp3?tab=readme-ov-file#1-adguard-home--adguard-app) | [Đây](https://github.com/zalofucker/fuck-you-kiki?tab=readme-ov-file#1-adguard-home--adguard-app)
 
 ### 2. 🍏 Apple (IOS/IpadOS/MacOS/VisionOS/TvOS/...)
 Sử dụng Config đã được làm sẵn và thêm dưới dạng Profile vào
